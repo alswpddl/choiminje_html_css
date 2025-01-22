@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple WebPage</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #e9ecef;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #343a40;
+            color: #ffffff;
+            padding: 15px 0;
+            text-align: center;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        #content {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        h2 {
+            color: #343a40;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th {
+            background-color: #f8f9fa;
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #dee2e6;
+        }
+        td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #dee2e6;
+        }
+        img {
+            max-width: 100px;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My First WebPage</h1>
+    </header>
+
+    <div id="content">
+        <h2>Welcome To My WebPage!</h2>
+        <table>
+          <thead>
+            <tr><th>Chair</th><th>Desk</th><th>Bookshelf</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><img src="chair.jpg" alt="Chair"></td><td><img src="desk.jpg" alt="Desk"></td><td><img src="bookshelf.jpg" alt="Bookshelf"></td></tr>
+            <tr><td>Wooden Chair</td><td>Wooden Desk</td><td>Wooden Bookshelf</td></tr>
+          </tbody>
+          <tfoot>
+            <tr><td>12$</td><td>20$</td><td>32$</td></tr>
+          </tfoot>
+        </table>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 My WebPage</p>
+    </footer>
+</body>
+</html>
