@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chair Detail Page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #e9ecef;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #343a40;
+            color: #ffffff;
+            padding: 15px 0;
+            text-align: center;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        #content {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        h2 {
+            color: #343a40;
+            margin-bottom: 20px;
+        }
+        img {
+            max-width: 300px;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #777;
+        }
+        input[type="button"] {
+            background-color: brown;
+            color: white; 
+            border: none; 
+            padding: 10px 20px; 
+            border-radius: 5px; 
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        input[type="button"]:hover {
+            background-color: burlywood; /* 호버 시 배경색 변경 */
+        }
+    </style>
+    <script>
+        function goBack() {
+            window.history.back(); 
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Chair Detail Page</h1>
+    </header>
+
+    <div id="content">
+        <h2>Iron Chair</h2>
+        <img src="chair.jpg" alt="Iron Chair">
+        <p>This chair is made of high-quality iron, ensuring durability and strength. It is designed for both comfort and style, making it a perfect addition to any room.</p>
+        <p><strong>Price:</strong> 12$</p>
+        <p><strong>Features:</strong></p>
+        <ul>
+            <li>Sturdy construction</li>
+            <li>Modern design</li>
+            <li>Easy to clean</li>
+        </ul>
+        <input type="button" value="Go Back" onclick="goBack()">
+    </div>
+
+    <footer>
+        <p>&copy; 2025 My WebPage</p>
+    </footer>
+</body>
+</html>

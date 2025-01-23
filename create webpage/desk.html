@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple WebPage</title>
+    <title>Desk Detail Page</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -34,24 +34,8 @@
             color: #343a40;
             margin-bottom: 20px;
         }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
-        th {
-            background-color: #f8f9fa;
-            padding: 10px;
-            text-align: center;
-            border: 1px solid #dee2e6;
-        }
-        td {
-            padding: 10px;
-            text-align: center;
-            border: 1px solid #dee2e6;
-        }
         img {
-            max-width: 100px;
+            max-width: 300px;
             height: auto;
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -62,27 +46,42 @@
             font-size: 0.9em;
             color: #777;
         }
+        input[type="button"] {
+            background-color: brown;
+            color: white; 
+            border: none; 
+            padding: 10px 20px; 
+            border-radius: 5px; 
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        input[type="button"]:hover {
+            background-color: burlywood;
+        }
     </style>
+    <script>
+        function goBack() {
+            window.history.back(); 
+        }
+    </script>
 </head>
 <body>
     <header>
-        <h1>My First WebPage</h1>
+        <h1>Desk Detail Page</h1>
     </header>
 
     <div id="content">
-        <h2>Welcome To My WebPage!</h2>
-        <table>
-          <thead>
-            <tr><th>Chair</th><th>Desk</th><th>Bookshelf</th></tr>
-          </thead>
-          <tbody>
-            <tr><td><img src="chair.jpg" alt="Chair"></td><td><img src="desk.jpg" alt="Desk"></td><td><img src="bookshelf.jpg" alt="Bookshelf"></td></tr>
-            <tr><td>Wooden Chair</td><td>Wooden Desk</td><td>Wooden Bookshelf</td></tr>
-          </tbody>
-          <tfoot>
-            <tr><td>12$</td><td>20$</td><td>32$</td></tr>
-          </tfoot>
-        </table>
+        <h2>Wooden Desk</h2>
+        <img src="desk.jpg" alt="Wooden Desk">
+        <p>This desk is crafted from premium wood, providing a sturdy and elegant workspace. Its spacious surface is perfect for both work and study.</p>
+        <p><strong>Price:</strong> 20$</p>
+        <p><strong>Features:</strong></p>
+        <ul>
+            <li>Spacious design</li>
+            <li>Elegant finish</li>
+            <li>Easy assembly</li>
+        </ul>
+        <input type="button" value="Go Back" onclick="goBack()">
     </div>
 
     <footer>
