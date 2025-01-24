@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    body{
+      background-color: bisque;
+    }
+    .title{
+      text-align: center;
+      font-family: sans-serif;
+      font-style: italic;
+      border: 3px;
+    }
+  </style>
+  <script>
+    function goBack() {
+      window.location.href = 'homepage.html'; 
+    }
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>buyFurniturePage</title>
+</head>
+<body>
+  <h1 border="1">Select Forniture</h1>
+  <label for="#">
+    <table id="table">
+      <tr><th>12$</th><th>20$</th><th>32$</th></tr>
+      <tr> 
+        <td>
+          <img src="chair.jpg" alt=""> 12$
+        </td>
+        <td>
+          <img src="desk.jpg" alt=""> 20$
+        </td>
+        <td>
+          <img src="bookshelf.jpg" alt=""> 32$
+        </td>
+      </tr>
+      <tr>
+        <th>
+          <input type="checkbox" id="chair" name="furniture">
+        </th>
+        <th>
+          <input type="checkbox" id="desk" name="furniture">
+        </th>
+        <th>
+          <input type="checkbox" id="bookshelf" name="furniture">
+        </th>
+      </tr>
+    </table>
+    <label for="name">name</label>
+    <input type="text">
+    <br>
+    <label for="tel">tel</label>
+    <input type="tel">
+    <br>
+    <label for="address">address</label>
+    <input type="text">
+    <br>
+    <label for="number">number</label>
+    <input type="number">
+    <br>
+    <label for="email">email</label>
+    <input type="email">
+    <br>
+    <a href="buycomplete.html">
+      <button type="submit">buy</button>
+    </a>
+    <br><br><br><br>
+    <input type="button" value="Go Back" onclick="goBack()">
+  </label>
+</body>
+</html>
