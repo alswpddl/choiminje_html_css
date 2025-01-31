@@ -108,3 +108,7 @@ chapter04  만들게요
       1) cols속성(너비)
       2) rows속성(줄 수)
       n8textareateg.html 생성
+
+  20250131에 기타 부분 서술할거 하고 css로 넘어갑니다.
+
+  
